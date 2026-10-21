@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "regexworkbench"
+version = "1.0.0"
+description = "Test regular expressions against text corpora, report matches and capture groups, and benchmark repeated execution."
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [{name = "RegexWorkbench contributors"}]
+
+[project.scripts]
+regex-workbench = "regex_workbench.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/bafnayeygian/RegexWorkbench"
+Issues = "https://github.com/bafnayeygian/RegexWorkbench/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
